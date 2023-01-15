@@ -1,4 +1,5 @@
 # Rock-Paper-Scissors Game
+import random
 print("Welcome to Rock-Paper-scissors Game")
 
 # ASCII ART
@@ -62,6 +63,8 @@ choice = game_images[user_choice]
 print(choice)
 
 # Computer choice
+
+
 
 
 
