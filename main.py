@@ -59,10 +59,35 @@ user_choice = int(input("what is your choice?\n"))
 
 # Choice List
 game_images = [rock, paper, scissors]
-choice = game_images[user_choice]
-print(choice)
+
+# Statement
+if user_choice >= 3 or user_choice < 0:
+    print("Invalid number, Choose only between 0 to 2")
+else:
+    choice_1 = game_images[user_choice]
+    print(choice_1)
 
 # Computer choice
+    print("Computer choice:")
+    computer_choice = random.randint(0, 2)
+    choice_2 = game_images[computer_choice]
+    print(choice_2)
+
+    if computer_choice == 2 and user_choice == 0:
+          print("HURRAY! You won")
+    elif computer_choice < user_choice:
+          print("HURRAY! You won")
+    elif computer_choice == 0 and user_choice == 2:
+          print("you lose!")
+    elif user_choice < computer_choice:
+          print("You lose!")
+    elif computer_choice == user_choice:
+          print("It's a draw!")
+
+print("\nHave Fun!")
+
+
+
 
 
 
