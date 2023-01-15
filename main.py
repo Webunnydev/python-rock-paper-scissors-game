@@ -53,5 +53,17 @@ scissors = '''
 '''
 
 # User's Choice
-print("Type 0 for Rock \nType 1 for Paper \nType 2 for Scissors")
+print("Type 0 for Rock \nType 1 for Paper \nType 2 for Scissors\n")
+user_choice = int(input("what is your choice?\n"))
+
+# Choice List
+game_images = [rock, paper, scissors]
+choice = game_images[user_choice]
+print(choice)
+
+# Computer choice
+
+
+
+
 
